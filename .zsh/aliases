@@ -1,0 +1,15 @@
+alias config='/usr/bin/git --git-dir=/home/satty/.cfg/.git/ --work-tree=/home/satty'
+alias ohmyzsh="nvim ~/.oh-my-zsh"
+alias vi="nvim"
+alias hostconfig="sudo nvim /etc/hosts"
+alias vimconfig="nvim ~/.config/nvim/init.vim"
+alias zshconfig="nvim ~/.zshrc"
+alias bsconfig="nvim ~/.config/bspwm/bspwmrc"
+
+alias gd="git status -s \
+ | fzf --no-sort --reverse \
+ --preview 'git diff --color=always {+2} | diff-so-fancy' \
+ --bind=ctrl-j:preview-down --bind=ctrl-k:preview-up \
+ --preview-window=right:60%:wrap"
+alias vi="nvim"
+alias fzfp="fzf --preview 'bat --color \"always\" {}'"
